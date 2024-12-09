@@ -63,12 +63,18 @@ background-color: black;
   height:0;
   margin-top:-48px;
   border-bottom:2px solid rgba(224, 52, 106, 1);
+  visibility: hidden; /*TREURE*/
+  display: none; /*TREURE*/
 }
 .header-nav > ul > li:hover .header-nav-link + ul > li {
   opacity:1;
   height:auto;
   margin-top:0;
+  visibility: visible; /*TREURE*/
+  display: block;/*TREURE*/
+  z-index: 2;
 }
+
 .header-nav .header-nav-link {
   
   float:left;
@@ -83,7 +89,7 @@ background-color: black;
 }
 
 .header-nav .header-nav-top-link {
-  padding: 25px 15px 25px;
+  padding: 25px 15px 31px;
 }
 .header-nav ul li:hover .header-nav-link {
   background-color:#333;
