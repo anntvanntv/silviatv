@@ -30,6 +30,7 @@ background-color: black;
   float:left;
   margin:0 auto;
   margin-left:308px;
+  backdrop-filter: blur(2px);
 }
 .header-nav ul {
   position:absolute;
@@ -48,6 +49,8 @@ background-color: black;
 }
 .header-nav ul li ul {
  margin-left: -1px;
+
+
 }
 .header-nav > ul {
   position:relative;
@@ -63,15 +66,18 @@ background-color: black;
   height:0;
   margin-top:-48px;
   border-bottom:2px solid rgba(224, 52, 106, 1);
-  visibility: hidden; /*TREURE*/
-  display: none; /*TREURE*/
+  visibility: hidden; 
+  display: none;
+
 }
 .header-nav > ul > li:hover .header-nav-link + ul > li {
   opacity:1;
-  height:auto;
+  height:70px;/*TREURE*/
+ 
+ 
   margin-top:0;
-  visibility: visible; /*TREURE*/
-  display: block;/*TREURE*/
+  visibility: visible;
+  display: block;
   z-index: 2;
 }
 
@@ -94,6 +100,7 @@ background-color: black;
 .header-nav ul li:hover .header-nav-link {
   background-color:#333;
   backdrop-filter: blur(2px);
+  height: 70px;
 }
 .header-nav ul li:hover .header-nav-top-link {
   background-color:rgba(224, 52, 106, 0.8);
@@ -366,10 +373,15 @@ ul  {
 
 
 @media (max-width: 767px) {
+  .header-nav > ul {
+    width: 800px;
+    
+  }
   .header-nav > ul > li {
     width:100%;
     border-right:4px solid rgba(224, 52, 106, 1);
     border-bottom:2px solid rgba(224, 52, 106, 1);
+    
   }
   .header-nav > ul > li:first-child > a {
     font-size:18px;font-weight:400;
@@ -382,6 +394,7 @@ ul  {
     top:0px;
     left:4px;
     width:100%;
+    margin-left: -4px;
   }
   .header-nav > ul > li > .header-nav-top-link + ul li {
     position:relative;
