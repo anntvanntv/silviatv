@@ -1,15 +1,14 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    transition:all 0.3s;
-    -webkit-transition:all 0.3s;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  transition:all 0.3s;
+  -webkit-transition:all 0.3s;
 }
 body{
-font-family: "Open Sans",sans-serif;
-background-attachment: fixed;
-background-color: black;
-
+  font-family: "Open Sans",sans-serif;
+  background-attachment: fixed;
+  background-color: black;
 }
 
 /*-------------------------- NAV PROVA -----------------------*/
@@ -18,11 +17,7 @@ background-color: black;
   width:100%;
   top:0;
 }
-
 .header-nav {
-  
-  /* overflow: hidden; */
-  /* position: fixed; */
   z-index:300;
   background-color: #191b1c96;
   width: 100%;
@@ -39,7 +34,6 @@ background-color: black;
   margin:0;
   padding:0;
   text-transform: uppercase;
-  
 }
 .header-nav ul li {
   width:200px;
@@ -48,9 +42,7 @@ background-color: black;
   border-left:1px solid rgba(224, 52, 106, 1);
 }
 .header-nav ul li ul {
- margin-left: -1px;
-
-
+  margin-left: -1px;
 }
 .header-nav > ul {
   position:relative;
@@ -58,9 +50,7 @@ background-color: black;
 .header-nav > ul > li:last-child {
   border-right:1px solid rgba(224, 52, 106, 1);
 }
-
 .header-nav > ul > li > .header-nav-link + ul li {
-
   width:201px;
   opacity:0;
   height:0;
@@ -68,13 +58,10 @@ background-color: black;
   border-bottom:2px solid rgba(224, 52, 106, 1);
   visibility: hidden; 
   display: none;
-
 }
 .header-nav > ul > li:hover .header-nav-link + ul > li {
   opacity:1;
-  height:70px;/*TREURE*/
- 
- 
+  height:70px;
   margin-top:0;
   visibility: visible;
   display: block;
@@ -82,7 +69,6 @@ background-color: black;
 }
 
 .header-nav .header-nav-link {
-  
   float:left;
   text-decoration:none;
   color:#ffffffc2;
@@ -93,9 +79,8 @@ background-color: black;
 .header-nav .header-nav-link:hover {
   background-color:rgba(224, 52, 106, 1) !important;
 }
-
 .header-nav .header-nav-top-link {
-  padding: 25px 15px 31px;
+  padding: 25px 15px 26px;
 }
 .header-nav ul li:hover .header-nav-link {
   background-color:#333;
@@ -106,7 +91,6 @@ background-color: black;
 .header-nav ul li:hover .header-nav-top-link {
   background-color:rgba(224, 52, 106, 0.8);
 }
-
 .header-nav > ul > li > .header-nav-top-link + ul {
   top:70px;
 }
@@ -115,15 +99,9 @@ background-color: black;
 }
 
 
-
-
-
-
-
   /*------------------index +  vanitatis + NYTimes + espanol -----------------------------*/
 .container h1, .nolibrosh1{
   margin-left: 304px;
-  color:white;
   margin-top: 160px;
   border-bottom-width: 2px;
   border-bottom-style: solid;
@@ -138,45 +116,52 @@ background-color: black;
 .nolibrosh1{
  margin-right: 5%;
 }
+.fotosilvia p {
+  font-size: 12px;
+}
+.wrap{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow: scroll;
+  padding-left: 298px;
+  padding-right: 40px;
+}
+.wrap p{
+  font-size: 14px;
+}
+.wrap a{
+  color: #fffc; 
+  text-decoration:none;
+  font-weight: 600;
+}
+.wrap a:hover{
+  text-decoration: line-through;
+}
+.art{
+  margin:5px;
+  line-height: 1.5;
+  height: 100px;
+  padding:3px;
+  color:black; 
+  background-color: #ffffffeb; 
+}
 
-
-  .wrap{
-   
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    overflow: scroll;
-    padding-left: 298px;
-    padding-right: 40px;
+  /*---------------container cookies-------------*/
+  .container-silvia.cookies{
+    margin-right: 10px;
+    padding-left: 310px;
   }
-  
- 
 
-  .wrap a{
-    color: #fffc; 
-    text-decoration:none;
-    font-weight: 600;
-  }
-  .wrap a:hover{
-    text-decoration: line-through;
-  }
-
-  .art{
-    margin:5px;
-    line-height: 1.5;
-    padding: 10px;
-    background-color: #ffffffeb; 
-    height: 100px;
-    padding:3px;
-    color:black; 
-  }
-
-  /*----------------------- libros ----------------*/
+  /*----------------------- libros + index ----------------*/
 
 .container-libros, .container-silvia {
   color: #ffffff9c;
-  margin-top: 300px;
+  margin-top: 160px;
 }
-.foto-libro, .fotosilvia{
+.fotosilvia{
+  max-width:400px;
+} 
+.foto-libro{
   max-width:300px;
 }
 .foto-libro img, .fotosilvia img{
@@ -193,8 +178,9 @@ background-color: black;
 
 .text-libro, .text-silvia{
   margin-right: 10%;
-  padding-left: 0px;
   margin-top: -4px;
+  padding-left: 0px;
+  font-family: Playfair, "Hoefler Text" , "Times New Roman" ,Times , serif ;
 }
 .text-libro h1{
   border-bottom-width: 3px;
@@ -205,32 +191,21 @@ background-color: black;
 .text-libro p{
   margin-top:17px;
 }
-.foto-libro, .fotosilvia{
-  max-width:300px;
-}
 
 
 /*------------zoom foto------------*/
 #zoomA {
-  /* (A) OPTIONAL DIMENSIONS */
- /*  width: 600px;
-  height: auto; */
- 
-  /* (B) ANIMATE ZOOM */
-  /* ease | ease-in | ease-out | linear */
   transition: transform ease-in-out 0.3s;
 } 
  
 /* (C) ZOOM ON HOVER */
 #zoomA:hover { 
-  transform: scale(2);
+  transform: scale(1.5);
   padding-top: 50px;
- 
- }
-
+}
  
   /*-------------- pagination -----------------*/
-  .archive-pagination-box{
+.archive-pagination-box{
   width: 100%;
   position: relative;
   padding: 25px 0 50px 0;
@@ -247,7 +222,6 @@ background-color: black;
   background: transparent;
   font-weight: normal;
 }
-
 ul  {
   list-style:none;
 }
@@ -269,196 +243,285 @@ ul  {
   text-align: center;
   -webkit-border-radius: 12px;
   border-radius: 12px;
-
-  
-
 }
-
 .pagination-link.marcado{
   background-color: #e0346a;
 }
-
 .fa-angle-right::before {
   content: '\f105';
 }
-
 .fa-angle-double-right::before {
   content: '\f101';
 }
 
+/*-------- footer -------------------------*/
+
+.footer{
+  height: 100px;
+  margin-top: 209px;
+  font-size: 14px;
+} 
+.footer p{
+  margin-left: 312px;
+}
+
+
+/*-----------contacto--------*/
+.social-media{
+  padding-left: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+/*----------------------------------- COOKIES banner--------------------------------*/
+.cookie-consent-modal{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  align-items: flex-start;
+}
+.cookie-consent-modal.active{
+  display: flex;
+}
+.contentcookies{
+  background-color:#978d06;
+  padding: 2vw 1vw;
+  border-radius: 10px;
+  margin-top: 28px;
+  margin-left: 15px;
+} 
+.contentcookies p{
+  font-size: 15px;
+}
+.btns{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2em;
+}
+.cookies-btn{
+  border:none;
+  outline:none;
+  padding: .8em 1,5em;
+  width: 100px;
+  margin-right: 1em;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 26px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.cookies-btn.accept{
+  background-color:#17672f;
+  color: #fff;
+}
+.cookies-btn.accept:hover{
+  background-color:#17672f98;
+}
+.contentcookies a{
+  color:#148836;
+}
+.contentcookies a:hover{
+  color: #0ea83b;
+}
 
 
 /*------------------- responsive max width 1339px -------------*/
 
-
-
 @media (max-width:1570px){
-  .art{
-    height: 136px;
-  }
+    .art{
+        height: 136px;
+    }
+    .text-silvia{
+        padding-left: 34px;
+    }
 }
-
 
 @media (max-width:1339px) {
-  .art{
-    line-height: 1.2;
-    font-size: 14px;
-    margin:8px;
-  }
-  .wrap {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+    .art{
+        line-height: 1.2;
+        font-size: 14px;
+        margin:8px;
+    }
+   .wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 @media (max-width:1272px){
-  .text-libro, .text-silvia{
-    padding-left:20px;
-    font-size:15px;
-  }
+    .text-libro, .text-silvia{
+        padding-left:20px;
+        font-size:15px;
+    }
 }
 
 @media (max-width: 1159px) {
-  .header-nav, .wrap-libro, .wrap-silvia{
-    margin-left: 157px;
-  }
-  h1{
-    margin-left: 157px !important;
-  }
-  .text-libro h1{
-    margin-left: auto !important;
-  }
-  .wrap{
-    margin-left: inherit;
-    padding-left: 151px;
-    padding-right: 100px;
-  }
+    .header-nav, .wrap-libro, .wrap-silvia, .footer p{
+        margin-left: 157px;
+    }
+    h1{
+        margin-left: 157px !important;
+    }
+    .text-libro h1{
+        margin-left: auto !important;
+    }
+    .wrap, .social-media{
+        margin-left: inherit;
+        padding-left: 151px;
+        padding-right: 100px;
+    }
 }
 
 @media (max-width:1071px){
-  #zoomA:hover{
-    padding-left:50px;
-  }
-   }
-
+    #zoomA:hover{
+        padding-left:50px;
+    }
+    .wrap-silvia, .footer p{
+        margin-left: 157px;
+    }
+}
 @media (max-width:1024px){
-  .header-nav, .wrap-libro{
-    margin-left:114px;
-  }
-  .wrap {
-    padding-left: 103px;
-  }
-  h1 {
-    margin-left:114px !important;
-  }
- 
+     .header-nav, .wrap-libro{
+        margin-left:114px;
+     }
+     .wrap, .social-media {
+        padding-left: 103px;
+     }
+     h1 {
+        margin-left:114px !important;
+     }
+     .wrap-silvia, .footer p{
+        margin-left: 114px;
+    }
 }
+
+/*------------- responsive max width 928px ------------------*/
 @media(max-width: 928px){
-  .header-nav ul li{
-    width: 172px;
-  }
-  .header-nav > ul > li > .header-nav-link + ul li{
-    width: 172px;
-  }
-  .header-nav, .wrap-libro, .wrap-silvia  {
-    margin-left:5%;
-  }
-  h1{
-    margin-left:5% !important;
-  }
-  .wrap{
-    padding-left: 5%;
-  }
- 
+      .header-nav ul li{
+         width: 172px;
+      }
+      .header-nav > ul > li > .header-nav-link + ul li{
+         width: 172px;
+      }
+      .header-nav, .wrap-libro, .wrap-silvia, .footer p  {
+          margin-left:5%;
+      }
+      h1{
+          margin-left:5% !important;
+      }
+      .wrap{
+          padding-left: 5%;
+      }
+      .social-media{
+          padding-left: 20px;
+      }
 }
 
-
-  /*----------------- responsive  max width 767px-----------*/
-
-
-
+/*----------------- responsive  max width 767px-----------*/
 
 @media (max-width: 767px) {
-  .header-nav > ul {
-    width: 800px;
-  }
-  .header-nav > ul > li {
-    width:100%;
-    border-right:4px solid rgba(224, 52, 106, 1);
-    border-bottom:2px solid rgba(224, 52, 106, 1); 
-  }
-  .header-nav .header-nav-top-link{
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .header-nav > ul > li:last-child {
-    border-bottom:none;
-  }
-  .header-nav > ul > li > .header-nav-top-link + ul {
-    position:relative;
-    top:0px;
-    left:4px;
-    width:100%;
-    margin-left: -4px;
-  }
-  .header-nav > ul > li > .header-nav-top-link + ul li {
-    position:relative;
-    float:left;
-    border-left:none;
-    width:100%;
-  }
-  .container h1, .nolibrosh1{
-    margin-top: 350px;
-    margin-left:44px;
-    margin-right:10px !important;
-  }
-  .wrap {
-    grid-template-columns: 1fr 1fr;
-    padding-right: 7px;
-  }
-  .art {
-    height: 83px;
-    line-height: 1.3;
-  }
-  .wrap-libro, .wrap-silvia{
-    flex-direction: column;
-    margin-left: 44px;
-  }
-  .foto-libro, .fotosilvia{
-    max-width:150px;
-  }
-  .text-libro, .text-silvia{
-    width: auto;
-    padding-left: 0px;
-    margin-top: 0px;
-  }
-  .text-libro h1{
-    margin-left: 44px;
-  }
-  .wrap-libro, .wrap-silvia{
-    display:block;
-  }
-  .foto-libro, .fotosilvia{
-    float:left;
-    margin-right: 20px;
-  }
-  .text-libro h1 {
-    border-bottom-width: 0px;
-   /*  border-bottom-style: solid;
-    padding-bottom: 6px;
-    margin-top: -6px; */
-  }
+      .header-nav > ul {
+         width: 800px;
+      }
+      .header-nav > ul > li {
+          width:100%;
+          border-right:4px solid rgba(224, 52, 106, 1);
+          border-bottom:2px solid rgba(224, 52, 106, 1); 
+      }
+      .header-nav .header-nav-top-link{
+          font-size: 18px;
+          font-weight: 600;
+      }
+      .header-nav > ul > li:last-child {
+          border-bottom:none;
+      }
+      .header-nav > ul > li > .header-nav-top-link + ul {
+          position:relative;
+          top:0px;
+          left:4px;
+          margin-left: -4px;
+          width:100%;
+      }
+      .header-nav > ul > li > .header-nav-top-link + ul li {
+          position:relative;
+          float:left;
+          border-left:none;
+          width:100%;
+      }
+      .container h1, .nolibrosh1{
+          margin-top: 350px;
+          margin-left:44px;
+          margin-right:10px !important;
+      }
+      .container-contacto h1{
+          margin-top: 350px !important;
+      }
+
+      .wrap {
+          grid-template-columns: 1fr 1fr;
+          padding-right: 7px;
+      }
+      .art {
+          height: 83px;
+          line-height: 1.3;
+      }
+      .container-silvia{
+          margin-top: 366px;
+      }
+      .wrap-libro, .wrap-silvia{
+          flex-direction: column;
+          margin-left: 44px;
+      }
+      .footer p{
+          margin-left: 44px;
+      }
+      .foto-libro, .fotosilvia{
+          max-width:150px;
+      }
+      .fotosilvia p {
+          font-size: 11px;
+      }
+      .text-libro, .text-silvia{
+          width: auto;
+          padding-left: 0px;
+          margin-top: 0px;
+      }
+      .text-libro h1{
+          margin-left: 44px;
+      }
+      .wrap-libro, .wrap-silvia{
+          display:block;
+      }
+      .foto-libro, .fotosilvia{
+          float:left;
+          margin-right: 20px;
+      }
+      .text-libro h1 {
+          border-bottom-width: 0px;
+    
+      }
 }
 
 @media (max-width:576px){
-  .foto-libro, .fotosilvia{
-  float: unset;
-}
+      .foto-libro, .fotosilvia{
+          float: unset;
+          margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 531px){
-  .wrap {
-    grid-template-columns: 1fr;
-  }
- 
+      .wrap {
+          grid-template-columns: 1fr;
+      }
+      .text-libro h2{
+          font-size: 15px;
+      }
+    
 }
 
 
