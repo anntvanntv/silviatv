@@ -27,7 +27,7 @@ for (let i = 0; i < arts.length; i++) {
 
 
 //COOKIES
- 
+window.addEventListener("DOMContentLoaded", () => {
 let cookieModal = document.querySelector(".cookie-consent-modal")
 let cancelCookieBtn = document.querySelector(".cookies-btn.cancel")
 let acceptCookieBtn = document.querySelector(".cookies-btn.accept")
@@ -48,7 +48,7 @@ setTimeout(function (){
         cookieModal.classList.add("active")
     }
 }, 2000)  
-
+});
 
 
 
