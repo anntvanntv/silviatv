@@ -116,6 +116,9 @@ body{
 .nolibrosh1{
  margin-right: 5%;
 }
+.nowrap {
+  white-space: nowrap;
+}
 .fotosilvia p {
   font-size: 12px;
 }
@@ -326,17 +329,17 @@ ul  {
   font-weight: 500;
 }
 .cookies-btn.accept{
-  background-color:#17672f;
+  background-color:#0f1010;
   color: #fff;
 }
 .cookies-btn.accept:hover{
-  background-color:#17672f98;
+  opacity: 0.5;
 }
 .contentcookies a{
-  color:#148836;
+  color:#a2a2a4;
 }
 .contentcookies a:hover{
-  color: #0ea83b;
+  opacity: 0.5;
 }
 
 
@@ -420,13 +423,20 @@ ul  {
           margin-left:5%;
       }
       h1{
-          margin-left:5% !important;
+          margin-left:0 !important;
       }
-      .wrap{
-          padding-left: 5%;
+      .wrap {
+          padding-left: 39px;
+      }
+      .container h1 {
+         margin-left: 44px !important;
       }
       .social-media{
           padding-left: 20px;
+      }
+      .container-silvia.cookies{
+        padding-left: 10px;
+        margin-top:122px;
       }
 }
 
@@ -463,9 +473,10 @@ ul  {
       }
       .container h1, .nolibrosh1{
           margin-top: 350px;
-          margin-left:44px;
+          margin-left:21px !important;
           margin-right:10px !important;
       }
+    
       .container-contacto h1{
           margin-top: 350px !important;
       }
@@ -475,6 +486,7 @@ ul  {
           padding-right: 7px;
       }
       .art {
+        margin:5px;
           height: 83px;
           line-height: 1.3;
       }
@@ -514,11 +526,22 @@ ul  {
     
       }
 }
+@media (max-width: 604px) {
+  .container h1 {
+     margin-left: 29px !important;
+  }
+  .wrap {
+    padding-left: 25px;
+  }
+}
 
 @media (max-width:576px){
       .foto-libro, .fotosilvia{
           float: unset;
           margin-bottom: 20px;
+    }
+    .wrap {
+      padding-left: 16px;
     }
 }
 
@@ -528,6 +551,9 @@ ul  {
       }
       .text-libro h2{
           font-size: 15px;
+      }
+      .container h1 {
+        margin-left: 23px !important;
       }
     
 }
