@@ -1,3 +1,32 @@
+//button scroll to Top
+
+//quan l'usuari baixa 100 píxels, apareix el botó
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+
+}
+
+//quan l'usuari fa click, puja a dalt de tot
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+
+
+
 
 //cambio de color blanco/negro 
     let arts = document.querySelectorAll('.art'); 
